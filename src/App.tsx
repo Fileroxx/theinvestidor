@@ -235,20 +235,20 @@ function App() {
     </div>
   </div>
 
-    {/* Banner Principal */}
-    <div className="bg-[#000] py-20">
-      <div className='bg-gradient-to-l-[#000] bg-gradient-to-r-[transparent]'>
-        <div className="container mx-auto">
-          <h1 className="text-4xl font-500 text-white">Bem-vindo ao The Investidor</h1>
-          <p className="text-2xl text-white mt-4">Acompanhe seu crescimento financeiro já.</p>
-          <a href="/login"><button className="bg-yellow-300 text-black px-6 py-2 mt-8">Começar agora</button></a>
-        
-        
-          
-        </div>
-      </div>
-      
+ {/* Banner em Imagem */}
+
+    <div className='lg:block max-md:hidden'>
+      <a href="/login">
+      <img src="banner.jpg" alt="" />
+      </a>
     </div>
+
+    <div className='lg:hidden max-md:block'>
+      <a href="/login">
+      <img src="banner-mobile.png" alt="" />
+      </a>
+    </div>
+
 
       {/* Conteúdo da Página */}
       <div className="container mx-auto py-10 w-[70%]">
